@@ -166,12 +166,15 @@ header{
 .nav-option:first-child{
     border-left: 3px solid rgb(0, 255, 0);
 }
-.nav-option:first-child a{
+.nav-option:first-child a, .nav-option:first-child path{
     color: white;
+    fill: white;
 }
 .nav-option svg{
     width: 25px;
     margin-right: 10px;
+}
+.nav-option path{
     fill: #7e7f82;
 }
 .nav-option a{
@@ -202,9 +205,37 @@ header{
 .empty-playlist{
     margin-top: 1rem;
 }
-/* profile  */
+/* aside foot  */
 .aside-foot svg{
     width: 25px;
     display: block;
-    fill: yellow;
+    margin-right: 5px;
+}
+.install path{
+    fill: #7e7f82;
+}
+.aside-foot{
+    color: #7e7f82;
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+}
+.install, .profile{
+    display: flex;
+    align-items: center;
+}
+.install{
+    font-size: .8rem;
+}
+.aside-foot hr{
+    border: 1px solid #7e7f82;
+    margin: 10px 0;
+}
+.profile{
+    color: white;
+}
+.profile svg{
+    background-color: #7e7f82;
+    border-radius: 50%;
 }
