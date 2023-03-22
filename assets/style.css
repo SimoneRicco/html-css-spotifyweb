@@ -145,3 +145,35 @@ header{
     justify-content: flex-end;
     padding: 1rem;
 }
+/* aside  */
+.logo{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.logo img{
+    width: 70%;
+}
+/* nav  */
+.nav-option{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.nav-option:first-child{
+    border-left: 3px solid rgb(0, 255, 0);
+}
+.nav-option:first-child a{
+    color: white;
+}
+.nav-option img{
+    width: 25px;
+    margin-right: 10px;
+}
+.nav-option a{
+    color: #7e7f82;
+    text-decoration: none;
+}
