@@ -29,7 +29,7 @@ aside{
 }
 header{
     background-color: #080B12;
-    width: 100%;
+    width: calc(100% - 250px);
     height: 90px;
     position: fixed;
     top: 0;
@@ -72,7 +72,8 @@ main{
 .green-line{
     border: 1px solid rgb(0, 255, 0);
     width: 50%;
-    margin: auto;
+    margin-inline: auto;
+    margin-top: 4px;
 }
 /* music section */
 section{
@@ -105,4 +106,23 @@ section{
 }
 .small-list{
     width: calc(100% / 3);
+}
+/* header  */
+.upgrade{
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+}
+.upgrade:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
 }
