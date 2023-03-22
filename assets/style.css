@@ -11,7 +11,7 @@ html{
 /* blocks */
 aside{
     height: calc(100vh - 100px);
-    background-color: green;
+    background-color: #000000;
     width: 250px;
     position: fixed;
     top: 0;
@@ -107,6 +107,24 @@ section{
 .small-list{
     width: calc(100% / 3);
 }
+.song-img{
+    position: relative;
+}
+.song-img i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    display: none;
+}
+.song-img:hover img{
+    opacity: 50%;
+}
+.song-img:hover i{
+    display: block;
+}
 /* header  */
 .upgrade{
     text-transform: uppercase;
@@ -115,6 +133,7 @@ section{
     border: 1px solid white;
     border-radius: 100px;
     padding: 1rem 2rem;
+    transition: .5s;
 }
 .upgrade:hover{
     transform: scale(1.1);
