@@ -169,11 +169,42 @@ header{
 .nav-option:first-child a{
     color: white;
 }
-.nav-option img{
+.nav-option svg{
     width: 25px;
     margin-right: 10px;
+    fill: #7e7f82;
 }
 .nav-option a{
     color: #7e7f82;
     text-decoration: none;
+}
+/* playlist */
+.playlist-area{
+    padding-left: 20px;
+    padding-top: 15px;
+    color: #7e7f82;
+}
+.playlist-title{
+    color: white;
+    text-transform: uppercase;
+}
+.playlists{
+    padding-top: 10px;
+}
+.create-playlist i{
+    font-size: 3rem;
+    margin-right: 5px;
+}
+.create-playlist{
+    display: flex;
+    align-items: center;
+} 
+.empty-playlist{
+    margin-top: 1rem;
+}
+/* profile  */
+.aside-foot svg{
+    width: 25px;
+    display: block;
+    fill: yellow;
 }
