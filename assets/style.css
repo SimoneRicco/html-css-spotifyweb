@@ -181,6 +181,10 @@ header{
     color: #7e7f82;
     text-decoration: none;
 }
+.nav-option:hover a, .nav-option:hover path{
+    color: white;
+    fill: white;
+}
 /* playlist */
 .playlist-area{
     padding-left: 20px;
@@ -205,6 +209,9 @@ header{
 .empty-playlist{
     margin-top: 1rem;
 }
+.empty-playlist:hover, .create-playlist:hover{
+    color: white;
+}
 /* aside foot  */
 .aside-foot svg{
     width: 25px;
@@ -216,8 +223,6 @@ header{
 }
 .aside-foot{
     color: #7e7f82;
-    position: absolute;
-    bottom: 0;
     padding: 20px;
     width: 100%;
 }
@@ -227,6 +232,10 @@ header{
 }
 .install{
     font-size: .8rem;
+}
+.install:hover, .install:hover path{
+    color: white;
+    fill: white;
 }
 .aside-foot hr{
     border: 1px solid #7e7f82;
