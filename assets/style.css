@@ -159,6 +159,9 @@ header{
 .logo img{
     width: 70%;
 }
+.small-logo{
+    display: none;
+}
 /* nav  */
 .nav-option{
     display: flex;
@@ -390,6 +393,32 @@ header{
         display: none;
     }
     aside{
-        width: 75px;
+        width: 50px;
+    }
+    .container{
+        width: calc(100% - 50px);
+        left: 50px;
+    }
+    header{
+        left: 50px;
+        width: calc(100% - 50px);
+    }
+    .small-logo{
+        display: block;
+    }
+    .big-logo{
+        display: none;
+    }
+    .nav-option:first-child{
+        border-width: 0;
+    }
+    nav svg{
+        transform: scale(1.3);
+        margin-bottom: 15px;
+        margin-inline: auto;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
     }
 } 
