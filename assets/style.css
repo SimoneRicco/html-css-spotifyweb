@@ -99,6 +99,7 @@ section{
 .song, .artist{
     width: 200px;
     text-align: center;
+    margin-inline: auto;
 }
 .song img, .artist img{
     width: 100%;
@@ -113,6 +114,7 @@ section{
 }
 .small-list{
     width: calc(100% / 3);
+    display: flex;
 }
 .song-img{
     position: relative;
@@ -372,4 +374,8 @@ header{
 }
 .volume:hover .ball{
     display: block;
+}
+/* media  */
+@media screen and (max-width: 1101px){
+    
 }
