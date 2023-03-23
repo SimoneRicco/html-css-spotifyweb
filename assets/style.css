@@ -97,9 +97,8 @@ section{
     font-size: .8rem;
 }
 .song, .artist{
-    width: 200px;
+    width: calc(100% / 6);
     text-align: center;
-    margin-inline: auto;
 }
 .song img, .artist img{
     width: 100%;
@@ -107,14 +106,10 @@ section{
 .song-list, .artist-list{
     padding: 2rem 0;
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
 }
 .artist img{
     border-radius: 50%;
-}
-.small-list{
-    width: calc(100% / 3);
-    display: flex;
 }
 .song-img{
     position: relative;
@@ -377,5 +372,24 @@ header{
 }
 /* media  */
 @media screen and (max-width: 1101px){
-    
+    .song, .artist{
+        width: calc(100% / 4 - 1rem);
+    }
+    .song-list{
+        flex-wrap: wrap;
+    }
 }
+@media screen and (max-width: 701px){
+    .song, .artist{
+        width: calc(100% / 2 - 1rem);
+    }
+    .song-list{
+        flex-wrap: wrap;
+    }
+    .aside-vanish{
+        display: none;
+    }
+    aside{
+        width: 75px;
+    }
+} 
