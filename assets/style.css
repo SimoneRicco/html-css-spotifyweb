@@ -17,15 +17,21 @@ aside{
     top: 0;
     left: 0;
     bottom: 0;
+    overflow: auto;
 }
 .music-player{
-    background-color: yellow;
+    background-color: #282828;
     width: 100%;
     height: 100px;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    justify-content: space-between;
 }
 header{
     background-color: #080B12;
@@ -62,6 +68,7 @@ main{
     display: flex;
     gap: 1rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .options-list ul{
     margin: auto;
@@ -225,6 +232,7 @@ header{
     color: #7e7f82;
     padding: 20px;
     width: 100%;
+    margin-top: 75px;
 }
 .install, .profile{
     display: flex;
@@ -247,4 +255,121 @@ header{
 .profile svg{
     background-color: #7e7f82;
     border-radius: 50%;
+}
+/* music player  */
+.current-song img{
+    width: 50px;
+}
+.current-song-title{
+    color: white;
+    font-weight: bold;
+    font-size: .9rem;
+}
+.current-song-subtitle{
+    color: #7e7f82;
+    font-size: .7rem;
+}
+.current-song-subtitle:hover{
+    color: white;
+    text-decoration: underline;
+}
+.current-song{
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+.song-icons i{
+    color: #7e7f82;
+    display: block;
+    font-size: 1.3rem;
+}
+.song-icons i:first-child{
+    margin-bottom: 5px;
+}
+.song-icons i:hover{
+    color: white;
+}
+.song-info{
+    padding: 0 25px 0 10px;
+}
+.mixer-options{
+    color: white;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.play{
+    font-size: 2rem;
+    margin-inline: 10px;
+    transition: .2s;
+}
+.play:hover{
+    transform: scale(1.2);
+}
+.timeline{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.song-mixer{
+    width: 40%;
+}
+.line{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.past-line, .on-volume{
+    width: 30%;
+    border: 3px solid #C1C1C1;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.future-line, .off-volume{
+    width: 70%;
+    border: 3px solid #343434;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.time-start, .time-end{
+    color: white;
+    font-size: .7rem;
+}
+.ball{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.line:hover .past-line{
+    border-color: green;
+}
+.line:hover .ball{
+    display: block;
+}
+.song-settings{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+}
+.volume{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.volume:hover .on-volume{
+    border-color: green;
+}
+.volume:hover .ball{
+    display: block;
 }
